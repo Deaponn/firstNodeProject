@@ -116,16 +116,16 @@ function login(res, req) {
         }
     }
     if (logged) { res.redirect("/admin") }
-    else { res.sendFile(__dirname + "\\static\\login-failed.html") }
+    else { res.sendFile(__dirname + "/static/login-failed.html") }
 }
 
 function checkForLogin(boolean, res, granted, pass) {
     if (boolean) { granted(res, pass) }
-    else { res.sendFile(__dirname + "\\static\\admin-denied.html") }
+    else { res.sendFile(__dirname + "/static/admin-denied.html") }
 }
 
 function adminGranted(res) {
-    res.sendFile(__dirname + "\\static\\admin-granted.html")
+    res.sendFile(__dirname + "/static/admin-granted.html")
 }
 
 function logout(res) {
@@ -190,11 +190,11 @@ function gender(res) {
 // reakcja na szczegolowy adres
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + "\\static\\index.html")
+    res.sendFile(__dirname + "/static/index.html")
 })
 
 app.get('/register', function (req, res) {
-    res.sendFile(__dirname + "\\static\\register.html")
+    res.sendFile(__dirname + "/static/register.html")
 })
 
 app.post('/register', function (req, res) {
@@ -202,7 +202,7 @@ app.post('/register', function (req, res) {
 })
 
 app.get('/login', function (req, res) {
-    res.sendFile(__dirname + "\\static\\login.html")
+    res.sendFile(__dirname + "/static/login.html")
 })
 
 app.post('/login', function (req, res) {
