@@ -1,0 +1,113 @@
+body, html{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(245, 245, 233);
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0px 0px 5px;
+}
+
+form label{
+    margin: 5px auto 5px 43%;
+}
+
+form input, form select{
+    margin: 5px 43% 5px auto;
+}
+
+table{
+    margin: 15px
+}
+
+td{
+    padding: 6px;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+#menu{
+    padding: 10px
+}
+
+#menu a, #menu a:visited{
+    color: #222;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#menu a:hover{
+    color: #444;
+    text-shadow: burlywood 0px 0px 5px;
+}
+
+#submit{
+    margin-left: 45%;
+}
+
+#offset{
+    margin: 5px 45.7% 5px 5px;
+}
+
+#offset2{
+    margin: 5px 45% 5px 5px;
+}
+
+#offset3{
+    margin: 5px 44% 5px 5px;
+}
+
+#denied{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(231, 62, 33);
+    margin: 20px
+}
+
+#admin{
+    padding: 10px;
+    background-color: rgb(241, 241, 190);
+}
+
+#admin a, #admin a:visited{
+    color: #222;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#admin a:hover{
+    color: #444;
+    text-shadow: burlywood 0px 0px 5px;
+}
+
+.granted{
+    background-color: beige;
+}
+
+.denied{
+    background-color: crimson;
+}
+
+.break{
+    width: 100%;
+}
+
+.offset{
+    margin: 5px;
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(224, 224, 100);
+    margin: 20px
+}

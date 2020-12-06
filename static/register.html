@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu" class="granted">
+        <a href="/">MENU</a>
+        <a href="/register">REGISTER</a>
+        <a href="/login">LOGIN</a>
+        <a href="/admin">ADMIN</a>
+    </div>
+    <div class="description">REJESTRACJA UZYTKOWNIKA</div>
+    <form action="/register" method="POST">
+        <label for="login">LOGIN: </label>
+        <input type="text" name="login" required></input>
+        <div class="break"></div>
+        <label for="password">PASSWORD:</label>
+        <input type="password" name="password" required></input>
+        <div class="break"></div>
+        <label for="student">STUDENT:</label>
+        <input type="checkbox" name="student" value="checked" id="offset"></input>
+        <div class="break"></div>
+        <label for="age">AGE:</label>
+        <select name="age" id="offset2">
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select>
+        <div class="break"></div>
+        <label for="sex">SEX:</label>
+        <label for="male" class="offset">M</label>
+        <input type="radio" name="sex" id="" value="male" class="offset" required></input>
+        <label for="female" class="offset">K</label>
+        <input type="radio" name="sex" id="offset3" value="female" required></input>
+        <div class="break"></div>
+        <input type="submit" value="REGISTER" id="submit">
+    </form>
+</body>
+
+</html>

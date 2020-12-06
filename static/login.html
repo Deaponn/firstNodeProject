@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu" class="granted">
+        <a href="/">MENU</a>
+        <a href="/register">REGISTER</a>
+        <a href="/login">LOGIN</a>
+        <a href="/admin">ADMIN</a>
+    </div>
+    <div class="description">LOGOWANIE UZYTKOWNIKA</div>
+    <form action="/login" method="POST">
+        <label for="login">LOGIN: </label>
+        <input type="text" name="login" required></input>
+        <div class="break"></div>
+        <label for="password">PASSWORD:</label>
+        <input type="password" name="password" required></input>
+        <div class="break"></div>
+        <input type="submit" value="LOGIN" id="submit">
+    </form>
+</body>
+
+</html>
